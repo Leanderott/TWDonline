@@ -1,0 +1,46 @@
+ITEM IMAGES
+===========
+
+ORDNERSTRUKTUR (Unterkategorien)
+================================
+
+assets/img/
+├── firearms/     Schusswaffen (usp, m1911, m9, glock17, ak47, m4a1,
+│                 m24, revolver, remington870)
+├── melee/        Nahkampf (huntingknife, screwdriver, machete,
+│                 baseballbat, metalbat, crowbar, hammer, fryingpan,
+│                 hatchet, pipewrench)
+├── gear/         Ausrüstung & Kosmetik (backpack, platecarrier,
+│                 helmet, balaclava*, hockeymask, eyepatch,
+│                 bandana_*)
+├── supplies/     Vorräte (water, soda, beans, soup, dogfood)
+├── gamepasses/   Outfit-Pakete (gamepass_ghillie.png)
+├── vehicles/     LEER — Fahrzeuge (z.B. santafe.png, mustang.png,
+│                 sedan.png, pickup.png ...)
+├── locations/    LEER — Orte (z.B. woodbury.png, prison.png,
+│                 sanctuary.png ...)
+└── clips/        LEER — eigene Gameplay-Clips (.mp4)
+
+STATUS: 35 echte Item-Bilder sind einsortiert (aus dem Community-Wiki,
+2026-09-19). Items OHNE Bild zeigen automatisch ein farbiges Neon-SVG.
+
+DATEITYPEN: einige Wiki-Exporte sind WebP-Daten mit .png-Endung.
+Browser erkennen das Format selbst — passt.
+
+EIGENE SCREENSHOTS EINFÜGEN
+===========================
+
+1. Im Spiel Win+Shift+S (oder Tool) — Item/Waffe/Fahrzeug/Ort fotografieren.
+2. Bild im passenden Unterordner mit der ID als Dateinamen speichern:
+      assets/img/<kategorie>/<item-id>.png
+   Beispiel:  assets/img/firearms/deagle.png
+              assets/img/locations/sanctuary.png
+3. Die ID jedes Items ist das Feld "id" in assets/js/data.js.
+   Existiert die Datei, nimmt die Seite automatisch dein Foto.
+4. Fehlende IDs (Wunschliste): deagle, acr, springfield, m16, m16a1,
+   m17, medkit, antibiotics, mre, energy, jerrycan, bunkerkey, walkie,
+   alle Fahrzeuge, alle Locations, sowie die 3 Outfits ohne Icon
+   (Frogman Corps, Deputy Sheriff, National Guard).
+
+HINWEIS: Bilder quadratisch halten (~120x120px Anzeige).
+PNG / JPG / WEBP funktionieren alle. Nur der Name muss stimmen.
