@@ -8,26 +8,11 @@ const GAME_INFO = {
   title: "The Walking Dead Online",
   tagline: "Open-world survival in the post-apocalyptic world of The Walking Dead.",
   by: "TWD Online",
-  creatorGroup: {
-    name: "TWD Online",
-    url: "https://www.roblox.com/communities/34088407/twd-online"
-  },
-  discord: "https://discord.gg/zPY878jtTV",
   legacyId: "16954579442",
   v3Id: "128039018996175",
   universeId: "7208219743",
   genre: "Survival — Open World",
-  serverSize: "50 (Legacy) / 70 (V3)",
-  status: "Beta / Early Access",
-  dominance: ["Scavenging", "Headshot-only walkers", "PvP survival", "Factions"],
-  description: "Scavenge abandoned towns, search for supplies, fight walkers, and survive against the infected and other players in a persistent online world. Build your character, collect weapons, vehicles, clothing and equipment, form factions with other survivors. The apocalypse is only just beginning.",
-  quickFacts: [
-    "Walkers only die to HEADSHOTS — every bullet or blade must land on the head.",
-    "Gunfire attracts walkers AND players. Melee kills stay silent.",
-    "Inventory: 20 base slots, 30 with a Backpack equipped.",
-    "Plate Carrier gives +50 HP plus armor damage reduction.",
-    "All vehicles need fuel from Jerry Cans (~4 cans to fill)."
-  ]
+  status: "Beta / Early Access"
 };
 
 const FIREARMS = [

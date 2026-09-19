@@ -52,7 +52,6 @@ function clipHTML(c) {
 /* ---------- HOME ---------- */
 function renderHome() {
   const g = GAME_INFO;
-  const quickFacts = g.quickFacts.map(f => `<div class="fact"><span>▸ ${f}</span></div>`).join("");
 
   const quicklinks = [
     ["weapons", "Firearms", FIREARMS.length, "g-rifle"],
@@ -76,47 +75,20 @@ function renderHome() {
   <section class="hero">
     <div class="chip">SURVIVAL ARCHIVE // ${g.status.toUpperCase()}</div>
     <h1><em>TWD</em> ONLINE</h1>
-    <p class="tag">${g.tagline} Scavenge towns, fight headshot-only walkers, outgun survivors and carve out your place in a world that no longer belongs to the living.</p>
-    <div class="hmeta">
-      <span class="pill">By <b>${g.by}</b></span>
-      <span class="pill">Genre <b>${g.genre}</b></span>
-      <span class="pill">Server <b>${g.serverSize}</b></span>
-      <span class="pill">ID <b>${g.v3Id}</b></span>
-      <span class="pill">Discord <b>↗</b></span>
-    </div>
+    <p class="tag">${g.tagline}</p>
   </section>
 
   <h2 style="font-size:1rem;color:var(--txt-dim);margin-bottom:14px">// QUICK DIRECTORY</h2>
   <div class="quicklinks">${quicklinks}</div>
 
-  <div class="two-col">
-    <div class="panel">
-      <h3>THE WORLD</h3>
-      <p>${g.description}</p>
-      <br/>
-      <p class="muted">
-        Official experience:
-        <a href="https://www.roblox.com/games/${g.v3Id}/The-Walking-Dead-Online" target="_blank" rel="noopener">The Walking Dead Online (V3 EARLY ACCESS)</a>
-        &nbsp;•&nbsp; Legacy:
-        <a href="https://www.roblox.com/games/${g.legacyId}/TWD-Online" target="_blank" rel="noopener">TWD Online [Legacy]</a>
-      </p>
-    </div>
-    <div class="panel">
-      <h3>FIELD MANUAL — KNOW THIS</h3>
-      <div class="facts" style="grid-template-columns:1fr">${quickFacts}</div>
-    </div>
-  </div>
-
   <div class="panel">
-    <h3>GAME VERSIONS</h3>
-    <div class="tbl-wrap">
-      <table class="tbl">
-        <thead><tr><th>Version</th><th>Date</th><th>What changed</th></tr></thead>
-        <tbody>
-          ${VERSIONS.map(v => `<tr><td style="color:#52ff9d">${v.version}</td><td>${v.date}</td><td>${v.note}</td></tr>`).join("")}
-        </tbody>
-      </table>
-    </div>
+    <h3>PLAY THE GAME</h3>
+    <p class="muted">
+      Official experience:
+      <a href="https://www.roblox.com/games/${g.v3Id}/The-Walking-Dead-Online" target="_blank" rel="noopener">The Walking Dead Online (V3 EARLY ACCESS)</a>
+      &nbsp;•&nbsp; Legacy:
+      <a href="https://www.roblox.com/games/${g.legacyId}/TWD-Online" target="_blank" rel="noopener">TWD Online [Legacy]</a>
+    </p>
   </div>
 
   <h2 style="font-size:1rem;color:var(--txt-dim);margin-bottom:14px">// GAMEPLAY CLIPS</h2>
